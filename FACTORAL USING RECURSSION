@@ -1,4 +1,4 @@
-*****FEBINOICC USING RECURSSION*****
+*****FACTORIAL USING RECURSSION*****
 #include<stdio.h>  
   
 long factorial(int n)  
