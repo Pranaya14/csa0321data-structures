@@ -1,4 +1,4 @@
-*****FEBINOCII WITHOUT RECURSSION*****
+*****FACTORIAL WITHOUT RECURSSION*****
 #include <stdio.h>
 #include <stdlib.h>
  
