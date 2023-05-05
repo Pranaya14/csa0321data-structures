@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+int i, low, high, mid, n, key, array[100];
+printf("Enter number of elements:");
+scanf("%d",&n);
+printf("Enter %d integers:", n);
+for(i = 0; i < n; i++)
+scanf("%d",&array[i]);
+printf("Enter value to find:");
+scanf("%d", &key);
+low = 0;
+high = n - 1;
+mid = (low+high)/2;
+while (low <= high) {
+if(array[mid] < key)
+low = mid + 1;
+else if (array[mid] == key) {
+printf("%d found at location %d.n", key, mid+1);
+break;
+}
+else
+high = mid - 1;
+mid = (low + high)/2;
+}
+if(low > high)
+ printf("Not found! %d isn't present in the list.n", key);
+return 0;
+}
+
+
+OUTPUT:
+Enter number of elements:3
+Enter 3 integers:34
+56
+76
+Enter value to find:1
+Not found! 1 isn't present in the list.n
+--------------------------------
+Process exited after 36.02 seconds with return value 0
+Press any key to continue . . .
